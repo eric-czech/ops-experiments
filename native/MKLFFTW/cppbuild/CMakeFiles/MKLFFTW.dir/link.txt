@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMKLFFTW.a  CMakeFiles/MKLFFTW.dir/src/MKLFFTW.o
+/usr/bin/ranlib libMKLFFTW.a
