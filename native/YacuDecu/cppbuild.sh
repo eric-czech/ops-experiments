@@ -12,10 +12,12 @@ fi
 
 case $PLATFORM in
     linux-x86_64)
-        $CMAKE -DCMAKE_BUILD_TYPE=Release \
-               -DCMAKE_INSTALL_PREFIX="../.." \
-               -DCMAKE_CXX_COMPILER="/usr/bin/g++" \
-               -DCMAKE_CUDA_HOST_COMPILER="/usr/bin/g++" ..
+        #$CMAKE -DCMAKE_BUILD_TYPE=Release \
+        #       -DCMAKE_INSTALL_PREFIX="../.." \
+        #       -DCMAKE_CXX_COMPILER="/usr/bin/g++" \
+        #       -DCMAKE_CUDA_HOST_COMPILER="/usr/bin/g++" ..
+	cp ../Makefile Makefile
+	mkdir -p ../../lib
         make
         make install
         ;;
@@ -30,4 +32,4 @@ case $PLATFORM in
         ;;
 esac
 
-cd "../../.."
+#cd "../../.."

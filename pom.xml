@@ -222,7 +222,7 @@
                         <includePath>${basedir}/native/YacuDecu/src/</includePath>
                     </includePaths>
                     <linkPaths>
-                    	<linkPath>${basedir}/lib/</linkPath>
+                    	<linkPath>${basedir}/native/lib/</linkPath>
                     </linkPaths>
                     <copyLibs>true</copyLibs>
                 </configuration>
